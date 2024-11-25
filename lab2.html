@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title of the page -->
+    <title>Registration Form</title>
+</head>
+<body style="background-color: #1b1b32;text-align: center;">
+
+
+
+    <p style="text-align: center;"><b>
+        <marquee direction="right" width="400px"height="40px" style="background-color:rgb(200, 200, 250);">
+            Registeration Form</marquee></b></p><br>
+    <h4 style="text-align: center;">please fill out the required information</h4>
+    <form style="text-align: center;">
+    <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="Male"><input type="radio" name="gender" value="male">Male <br></label>
+        <label for=" Female"><input type="radio" name="gender" value="female">Female<br></label><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <marquee direction="right" width="400px" height="400px"><img src="profile.jpeg" alt="Mountain View" style="width:304px;height:228px;"></marquee>
+
+</body>
+</html>
