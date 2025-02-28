@@ -1,0 +1,81 @@
+/* 1. Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body styling */
+body {
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+/* 3. Header Styling */
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+/* 4. Gallery container styling */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    /* Items arranged in a row */
+    flex-wrap: wrap;
+    /* Allow items to wrap onto a new line */
+    justify-content: center;
+    /* Center images horizontally */
+    align-items: center;
+    /* Center images vertically */
+    gap: 16px;
+    /* Set the gap between images */
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* Center the gallery */
+}
+
+/* 5. Image styling */
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    /* Limit image width */
+    height: 300px;
+    /* Set uniform height for all images */
+    object-fit: cover;
+    /* Maintain aspect ratio, fill container */
+    border-radius: 10px;
+    border: 5px solid blue;
+}
+
+/* 6. Box-sizing for images */
+* {
+    box-sizing: border-box;
+    /* Ensures border/padding are included in width calculation */
+}
+
+/* 7. Responsive adjustments for images */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+
+/* 8. Adding a pseudo-element after the last image */
+.gallery::after {
+    content: '';
+    width: 100%;
+    height: 0;
+    display: block;
+}

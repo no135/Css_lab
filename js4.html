@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        li {
+            margin: 10px 0;
+        }
+
+        button {
+            margin-left: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .feedback {
+            color: green;
+            font-style: italic;
+        }
+        .error {
+            color: red;
+            font-style: italic;
+        }
+        #counterSection {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task" />
+    <button id="addButton" disabled>Add Task</button>
+    
+    <!-- Feedback Message -->
+    <p id="feedbackMessage"></p>
+    
+    <!-- Task Counters -->
+    <p>Total Tasks: <span id="totalTasks">0</span></p>
+    <p>Completed Tasks: <span id="completedTasks">0</span></p>
+    
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+    
+    <!-- Control Buttons -->
+    <button id="clearAllButton">Clear All Tasks</button>
+    <button id="exportButton">Export Tasks</button>
+    <button id="importButton">Import Tasks</button>
+    
+    <!-- Hidden File Input for Import -->
+    <input type="file" id="fileInput" style="display: none;">
+    <script src="js4.js"></script>
+</body>
+
+</html>

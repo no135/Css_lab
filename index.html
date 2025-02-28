@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sitka Small', Times New Roman, serif;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right,#7886C7, #F1B0A7);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #4e73df;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #ff6347;
+            transform: translateX(10px);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            .project {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .project h3 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
+
+            .project {
+                padding: 1.2rem;
+            }
+        }
+
+        .animate {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="animate">
+        <h2>About Me</h2>
+        <p>Hello! I am Bemiheret Tabushe. I got in touch with web development during my IT class in high school. And
+            this is my portfolio page in my web development course in college. I will be sharing the websites I develop
+            for my web programming course here.</p>
+    </section>
+
+    <section id="projects" class="animate">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Lab1</h3>
+            <p>Lab1 is My first website built using HTML for web programming course.</p>
+            <a href="lab1.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Lab2</h3>
+            <p>Lab2 is a registration form made using HTML.</p>
+            <a href="lab2.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Iframe</h3>
+            <p>Iframe is an iframe concept website.</p>
+            <a href="iframe.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Lab2 with CSS</h3>
+            <p>Lab2 with CSS is a registration form using HTML and CSS.</p>
+            <a href="registeration_form_with_css.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>my old portfolio page</h3>
+            <p>Portfolio page using HTML and CSS.</p>
+            <a href="my_portfolio.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Javascript popup count function using html and js code</h3>
+            <p>This is my work on counter popup function when you click on submit button it popup how many times the submit button 
+                is clicked after counting the number of times the submit button.</p>
+            <a href="js.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Javascript count function using html and js code</h3>
+            <p>This is my work on counter function when you click on submit button it change header into the number of the submit
+                 button is clicked after counting the number of times the submit button.</p>
+            <a href="js2.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Javascript To-Do list using html and js code</h3>
+            <p>This is my work on To-DO list when you write task on textarea and click on add task it display the task that
+                is added using textarea below the text area and you can strikethrough it by clicking
+                 on complete button and it have delete button that can remove the task from being dispalyed.</p>
+            <a href="js3.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Javascript To-Do list upgraded using html and js code</h3>
+            <p>This is my work on To-Do list upgraded when you write task on textarea and click on add task it display 
+            the task that is added using textarea below the textarea and you can strikethrough it by clicking on 
+            complete button and it have delete button that can remove the task from being dispalyed. And it have 
+            clear all tasks button which remove all the tasks inputed and it have import and export task buttons 
+            that can import and export from local storage that is .json file extension. while it show message for
+            add task, complete, delete, clear all tasks button.</p>
+            <a href="js4.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>HTML code using flexbox</h3>
+            <p>This is my work on flexbox.</p>
+            <a href="flexboxLab.html">View Project</a>
+        </div>
+        
+    </section>
+
+    <section id="skills" class="animate">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="animate">
+        <h2>If you want to contact me, here is my contact information:</h2>
+        <p>Email: nobodyst1234@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bemiheret Tabushe</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling effect for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll Animations
+        const sections = document.querySelectorAll('.animate');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.25 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
